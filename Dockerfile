@@ -25,11 +25,11 @@ RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-proje
 RUN R -e "install.packages(c('shinyTime','leaflet','dplyr','tidyr','stringr','sf','zoo','data.table','DT','leaflet.extras', 'rgdal', 'sp'), repos='https://cloud.r-project.org/')"
 
 # copy the app to the image
-RUN mkdir /home/koffi/leaflet_location_server_complex
-COPY leaflet_location_server_complex /home/koffi/leaflet_location_server_complex
+RUN mkdir /root/leaflet_location_server_complex
+COPY leaflet_location_server_complex /root/leaflet_location_server_complex
 
 COPY Rprofile.site /usr/lib/R/etc/
 
 EXPOSE 3838
 
-CMD ["R", "-e", "shiny::runApp('/home/koffi/leaflet_location_server_complex')"]
+CMD ["R", "-e", "shiny::runApp('/root/leaflet_location_server_complex')"]
