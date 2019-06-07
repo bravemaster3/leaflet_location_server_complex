@@ -1,0 +1,115 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+.navbar-nav li a {
+	color: #fff !important;
+    background-color: #5e7e24 !important;
+}
+
+.navbar-brand {
+	color:  #000000 !important;
+	font-weight: bold;
+	font-size: 25px;
+}
+.navbar-static-top {
+  position: static;
+  margin-bottom: 0px;
+  background-color: #5e7e24 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav > .active > a {
+color: #FFECDB !important;
+background-color:#5e7e24 !important;
+background-image: none !important;
+}
+
+
+
+logo-id{
+  position: fixed;
+  left: 10px;
+  top: 5px;
+}
+
+div.outer {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+}
+
+div.avail_table {
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 0;
+}
+
+
+div.filters {
+	padding-left: 15px;
+}
+
+/* Customize fonts */
+body, label, input, button, select { 
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+}
+
+h2{
+font-size: 25px;
+}
+
+h1, h2, h3, h4 { 
+margin-top: 0px;
+font-weight: 400; 
+color: black;
+}
+
+p { 
+color: black;
+}
+
+#controls {
+  /* Appearance */
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  /*cursor: move; */
+  /* Fade out while not hovering */
+  opacity: 0.65;
+  zoom: 0.9;
+  transition: opacity 0;
+}
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.97;
+  transition-delay: 0;
+}
+
+#info_table {
+  /* Appearance */
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  /*cursor: move; */
+  /* Fade out while not hovering */
+  opacity: 1;
+  zoom: 0.9;
+  transition: opacity 0;
+}
+
+/* Position and style citation */
+#cite {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+/* If not using map tiles, show a white background */
+.leaflet-container {
+  background-color: white !important;
+}
